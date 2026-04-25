@@ -1,0 +1,547 @@
+/* Safe UI redesign pass: compact, workshop-friendly polish.
+   Loaded after the original stylesheet so it can be removed cleanly. */
+
+:root {
+  --bg: #f6f3ed;
+  --bg-soft: #fbfaf6;
+  --panel: #fffdf8;
+  --panel-strong: #ffffff;
+  --navy: #071827;
+  --navy-2: #102b42;
+  --navy-3: #17415f;
+  --gold: #a66f24;
+  --gold-2: #d4a85f;
+  --teal: #118f88;
+  --border: rgba(12, 31, 48, 0.13);
+  --border-strong: rgba(12, 31, 48, 0.24);
+  --text: #102031;
+  --muted: #61717d;
+  --muted-2: #8a96a0;
+  --shadow: 0 10px 26px rgba(19, 31, 43, 0.075);
+  --shadow-soft: 0 4px 14px rgba(19, 31, 43, 0.055);
+  --radius: 13px;
+  --radius-sm: 8px;
+  --sidebar-width: 196px;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background:
+    radial-gradient(circle at top left, rgba(166, 111, 36, 0.055), transparent 23%),
+    radial-gradient(circle at right center, rgba(16, 43, 66, 0.055), transparent 25%),
+    linear-gradient(180deg, #faf7f1 0%, #f3eee5 100%);
+}
+
+.shell {
+  gap: 14px;
+  padding: 14px;
+}
+
+.shell__sidebar {
+  top: 14px;
+  min-height: calc(100vh - 28px);
+}
+
+.shell__main {
+  gap: 10px;
+}
+
+.analyst-sidebar {
+  gap: 14px;
+  padding: 16px 13px;
+  border-radius: 16px;
+  box-shadow: 0 18px 38px rgba(7, 24, 39, 0.22);
+}
+
+.analyst-sidebar__mark {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.analyst-sidebar__brand {
+  gap: 8px;
+}
+
+.analyst-sidebar__brand h1 {
+  font-size: 1.2rem;
+}
+
+.analyst-sidebar__brand p,
+.analyst-sidebar__status p,
+.analyst-sidebar__footer p,
+.sidebar-note {
+  font-size: 0.82rem;
+  line-height: 1.35;
+}
+
+.sidebar-section-label,
+.section-kicker,
+.vessel-id,
+.detail-row__label,
+.group-badge__eyebrow,
+.summary-chip__label,
+.console-subtle-label {
+  font-size: 0.64rem;
+  letter-spacing: 0.11em;
+}
+
+.sidebar-nav-button,
+.sidebar-nav-link,
+.exercise-switcher__link,
+.view-nav__button,
+.ghost-button,
+.solid-button,
+.group-option {
+  min-height: 38px;
+  padding: 0 12px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+}
+
+.sidebar-nav-button,
+.sidebar-nav-link {
+  padding: 0 11px;
+}
+
+.sidebar-status-card {
+  padding: 12px;
+  gap: 6px;
+}
+
+.sidebar-status-card strong {
+  font-size: 0.9rem;
+}
+
+.sidebar-status-card__action,
+.group-badge__change {
+  min-height: 28px;
+  padding: 0 10px;
+  font-size: 0.78rem;
+}
+
+.content-header {
+  padding: 2px 2px 0;
+}
+
+.content-header__copy {
+  gap: 4px;
+}
+
+.content-header__copy h2 {
+  font-size: clamp(1.55rem, 2.25vw, 2.25rem);
+  letter-spacing: -0.025em;
+}
+
+.content-header__copy p {
+  max-width: 62rem;
+  font-size: 0.93rem;
+  line-height: 1.45;
+}
+
+.group-badge {
+  min-height: 36px;
+  padding: 7px 10px 7px 11px;
+  gap: 8px;
+  box-shadow: var(--shadow-soft);
+}
+
+.group-badge strong,
+.mode-pill {
+  font-size: 0.86rem;
+}
+
+.mode-pill {
+  min-height: 36px;
+  padding: 0 12px;
+}
+
+.view-panel,
+.console-card,
+.summary-strip,
+.facilitator-card {
+  padding: 18px;
+  border-radius: 13px;
+  box-shadow: var(--shadow-soft);
+}
+
+.view-panel__header,
+.console-card__header,
+.summary-strip__top,
+.registry-table__head {
+  gap: 12px;
+}
+
+.view-panel__header {
+  margin-bottom: 12px;
+}
+
+.console-card__header {
+  margin-bottom: 10px;
+}
+
+.view-panel__header h3,
+.console-card__header h3,
+.summary-strip__body h3 {
+  font-size: 1.28rem;
+}
+
+.view-panel__header p,
+.console-subtle,
+.subtle-line,
+.inbox-row__trade .subtle-line,
+.inbox-row__body .subtle-line {
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
+.registry-table {
+  border-radius: 11px;
+  box-shadow: none;
+}
+
+.registry-table__head {
+  padding: 11px 14px;
+  background: #fbf6ec;
+}
+
+.registry-table__labels {
+  grid-template-columns: 42px 118px minmax(220px, 1.3fr) minmax(200px, 0.9fr) 128px;
+  gap: 12px;
+  padding: 9px 13px;
+  font-size: 0.62rem;
+}
+
+.inbox-row {
+  grid-template-columns: 42px 118px minmax(220px, 1.3fr) minmax(200px, 0.9fr) 128px;
+  gap: 12px;
+  padding: 12px 14px;
+}
+
+.inbox-row__number {
+  font-size: 0.82rem;
+}
+
+.inbox-row__body,
+.inbox-row__trade,
+.inbox-row__title,
+.summary-strip__title {
+  gap: 4px;
+}
+
+.inbox-row__title h3,
+.summary-strip__title h3 {
+  font-size: 1.12rem;
+}
+
+.meta-line {
+  gap: 5px;
+  font-size: 0.88rem;
+  line-height: 1.4;
+}
+
+.inbox-row__actions .solid-button {
+  min-height: 38px;
+  padding: 0 13px;
+  white-space: nowrap;
+}
+
+.vessel-media--thumbnail,
+.vessel-media--compact {
+  min-height: 74px;
+  border-radius: 10px;
+}
+
+.vessel-media--summary {
+  min-height: 132px;
+  border-radius: 12px;
+}
+
+.vessel-media__inspect-label {
+  opacity: 0.88;
+  right: 8px;
+  bottom: 8px;
+  min-height: 21px;
+  font-size: 0.58rem;
+}
+
+.review-screen,
+.review-layout__main,
+.review-layout__side,
+.decision-controls,
+.facilitator-metrics,
+.intro-steps {
+  gap: 12px;
+}
+
+.summary-strip {
+  gap: 13px;
+}
+
+.summary-strip__layout {
+  grid-template-columns: 220px minmax(0, 1fr);
+  gap: 16px;
+}
+
+.summary-strip__body {
+  gap: 9px;
+}
+
+.summary-strip__meta {
+  gap: 7px;
+}
+
+.summary-chip {
+  min-height: 30px;
+  padding: 0 10px;
+  gap: 6px;
+  font-size: 0.84rem;
+}
+
+.review-layout {
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: 14px;
+}
+
+.detail-list {
+  gap: 6px 18px;
+}
+
+.detail-row {
+  gap: 5px;
+  padding: 10px 0;
+}
+
+.detail-row strong {
+  font-size: 0.9rem;
+  line-height: 1.42;
+}
+
+.decision-card__helper {
+  font-size: 0.86rem;
+  line-height: 1.4;
+}
+
+.decision-controls {
+  gap: 10px;
+}
+
+.decision-select,
+.decision-input {
+  min-height: 38px;
+  border-radius: 9px;
+  font-size: 0.88rem;
+}
+
+.facilitator-shortcut,
+.decision-token {
+  min-height: 26px;
+  font-size: 0.68rem;
+}
+
+.facilitator-metric {
+  padding: 10px;
+}
+
+.ais-map {
+  min-height: 500px;
+}
+
+.ais-map__legend {
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  gap: 6px;
+}
+
+.legend-token {
+  min-height: 28px;
+  padding: 0 10px;
+  gap: 6px;
+  font-size: 0.72rem;
+}
+
+.leaflet-control-attribution {
+  font-size: 10px;
+}
+
+.intro-overlay {
+  padding: 10px;
+}
+
+.intro-overlay__panel {
+  width: min(1180px, calc(100vw - 20px));
+  min-height: calc(100vh - 20px);
+  grid-template-columns: minmax(260px, 0.62fr) minmax(0, 1.38fr);
+  border-radius: 20px;
+}
+
+.intro-overlay__aside {
+  padding: 24px 22px;
+}
+
+.intro-overlay__aside h2 {
+  font-size: clamp(1.55rem, 2.1vw, 2.2rem);
+}
+
+.intro-overlay__aside p,
+.intro-overlay__header p,
+.intro-step p {
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.intro-overlay__main {
+  gap: 18px;
+  padding: 28px 32px 24px;
+}
+
+.intro-overlay__header {
+  max-width: 38rem;
+}
+
+.intro-overlay__header h3 {
+  font-size: clamp(2.15rem, 3.4vw, 3.3rem);
+}
+
+.intro-step {
+  padding: 16px;
+  border-radius: 13px;
+}
+
+.intro-step__number {
+  width: 30px;
+  height: 30px;
+}
+
+.intro-step strong {
+  font-size: 0.96rem;
+}
+
+.group-option {
+  min-height: 52px;
+  font-size: 1rem;
+}
+
+.media-lightbox__panel {
+  width: min(1120px, 100%);
+  padding: 40px 14px 14px;
+}
+
+.media-lightbox__image {
+  height: min(80vh, 780px);
+}
+
+@media (max-width: 1220px) {
+  :root {
+    --sidebar-width: 178px;
+  }
+
+  .shell {
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .registry-table__labels,
+  .inbox-row {
+    grid-template-columns: 34px 96px minmax(190px, 1.25fr) minmax(150px, 0.8fr) 112px;
+    gap: 10px;
+  }
+
+  .review-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .review-layout__side {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .facilitator-card {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 980px) {
+  .shell {
+    grid-template-columns: 1fr;
+  }
+
+  .shell__sidebar {
+    position: static;
+    min-height: 0;
+  }
+
+  .analyst-sidebar {
+    grid-template-columns: minmax(170px, 0.7fr) 1fr 1fr;
+    grid-template-rows: auto;
+    align-items: start;
+  }
+
+  .analyst-sidebar__footer {
+    grid-column: 1 / -1;
+  }
+
+  .content-header {
+    flex-direction: column;
+  }
+
+  .registry-table__labels {
+    display: none;
+  }
+
+  .inbox-row {
+    grid-template-columns: 88px minmax(0, 1fr);
+  }
+
+  .inbox-row__number,
+  .inbox-row__trade,
+  .inbox-row__actions {
+    grid-column: 2;
+  }
+
+  .inbox-row__media {
+    grid-row: 1 / span 4;
+  }
+
+  .summary-strip__layout,
+  .detail-list,
+  .review-layout__side,
+  .intro-steps,
+  .group-picker__options {
+    grid-template-columns: 1fr;
+  }
+
+  .intro-overlay__panel {
+    grid-template-columns: 1fr;
+  }
+
+  .intro-overlay__aside {
+    align-content: start;
+  }
+}
+
+@media (max-width: 680px) {
+  .analyst-sidebar {
+    grid-template-columns: 1fr;
+  }
+
+  .view-panel,
+  .console-card,
+  .summary-strip,
+  .facilitator-card {
+    padding: 14px;
+  }
+
+  .decision-controls,
+  .facilitator-metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .ais-map {
+    min-height: 390px;
+  }
+}
