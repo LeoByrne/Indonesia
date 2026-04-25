@@ -1,0 +1,204 @@
+# STS and dark fleet detection case-development pack for an maritime PF workshop
+
+## Workshop objectives and operating constraints
+
+Exercise 2 (“STS and dark fleet detection”) needs to feel like real operational work, but still run smoothly with around 50 participants split into 4–5 groups, with an interpreter in the middle of everything. That pushes the design towards: (a) short, high-signal data fields; (b) a clear classification decision; and (c) group discussion and justification, rather than “complex mechanics”.
+
+This pack is therefore written as **encounter-case content**: eight cases you can turn into digital “cards” (and also print as one-page paper cards) where participants classify each encounter as routine/non-problematic, false positive, ambiguous, concerning, or high-risk. The cases are designed to reinforce **the four-layer risk mindset** (identity; movement/AIS; cargo/documents; finance/insurance/service providers) using **public, citable anchors** rather than invented lore. ?cite?turn9view0?turn16view0?turn12view0?
+
+A key workshop design choice embedded in this pack is: **participants should be able to reach a defensible classification without needing “round-based” information requests**. The facilitator can still reveal hidden facts after the group commits, but the participant-facing dataset is deliberately sufficient for a first-pass triage (and for explaining “what would you do next in the real world?”). ?cite?turn9view2?turn16view0?
+
+## How to use this pack in your digital and paper build
+
+Each case below is presented in two layers:
+
+- **Participant-facing**: what goes on the encounter card (and, optionally, on a simple map panel).
+- **Facilitator-only**: what the case is “really” about (including sanctions/designations and the intended “best classification”).
+
+Several cases are explicitly labelled as **composites**: they use real vessels and real operating areas, but the *specific* timestamps/distances/behaviour are simplified to make the exercise teachable and reproducible on paper. Where a case is based on a documented real-world event with dates and circumstances, that is stated. ?cite?turn12view3?turn11view0?turn20search0?
+
+A practical build note for your existing “Registry Review OS”-style web app: the “recommended participant-facing data fields” in each case are intentionally compatible with the kind of fields you already used in Exercise 1 (vessel identity; operator/manager; flag history; insurer; operating area; track summary; documents summary; decision and notes). ?cite?turn9view3?turn16view0?
+
+## Ranked shortlist of strong public case anchors
+
+This shortlist is ranked by (i) authority/traceability of sources, (ii) how cleanly the facts map onto workshop learning points, and (iii) relevance to Southeast Asian operating geography.
+
+The ?entity?["organization","United Nations","un"]? DPRK Panel of Experts reporting (example: S/2019/691) is unusually workshop-friendly because it gives **named vessels + IMO numbers + clear descriptions of illicit STS patterns**, including a DPRK coal-at-sea transfer set with **specific dates**. ?cite?turn12view1?turn12view3?
+
+The ?entity?["organization","Office of Foreign Assets Control","us treasury sanctions office"]? North Korea shipping advisory (March 2019) is useful because it provides: (a) explicit framing that DPRK evasion relies on illicit STS of refined petroleum and coal; and (b) annex lists of vessels believed to have engaged in STS with DPRK tankers (with IMO numbers), plus a vessel list for coal exports since 2017. ?cite?turn16view0?turn17view0?turn17view1?
+
+OFAC’s 2025 Iran shipping advisory is a strong teaching backbone for **how sanctions evasion looks across all four layers**, and includes concrete examples and red flags: STS in or near Singapore/Malaysia-adjacent waters, AIS disablement/manipulation, document falsification, and insurance as both a red flag and a facilitator. ?cite?turn9view0?turn9view2?turn9view3?
+
+The ?entity?["organization","U.S. Department of the Treasury","us federal executive dept"]? press release on the MS ENOLA case (Dec 19, 2024) is a clean, authoritative anchor for “high-risk Iranian shadow-fleet STS + AIS off”, and it names the counterparty tanker, corporate roles, and the deceptive behaviour. ?cite?turn11view0?
+
+The ?entity?["organization","Reuters","international news agency"]? reporting on Malaysia’s January 2026 interdiction near Penang is valuable because it ties STS risk to **coastal state control, anchoring permissions, and regional illegal STS hotspots**—very relevant to the Singapore/Malacca approaches context. ?cite?turn20search0?
+
+Singapore port-state and bunkering governance sources are excellent for building your “routine STS / benign transfer” and “false positive” cases: the ?entity?["organization","Maritime and Port Authority of Singapore","port authority, singapore"]? provides licensing/standards context for bunkering, while Singapore’s ship-to-ship petroleum transfer regulations establish a clear compliance baseline (permission, conditions, etc.). ?cite?turn18search2?turn18search14?turn0search14?
+
+For Indonesia-relevant coal transhipment realism, the combination of Indonesian coal logistics descriptions (e.g., typical barge-to-bulk-carrier transhipment at offshore anchorages) and real vessel examples (e.g., MV Placid Sea at Taboneo) gives you a credible “routine coal at sea” counterweight to DPRK coal evasion cases. ?cite?turn21search24?turn21search18?turn22search6?
+
+**Recommended final 8-case set:** the eight cases below are already balanced to meet your target mix: routine/non-problematic STS, false positives, ambiguous, concerning, and high-risk “dark-fleet-style” encounters — with **six oil-focused** and **two coal-focused**, and a strong emphasis on SE Asia-adjacent geography plus one “must-have” East China Sea proliferation case. ?cite?turn9view0?turn16view0?turn12view3?turn20search0?
+
+## Eight candidate encounter cases
+
+**Oil case OIL-01 — Licensed bunkering in Singapore approaches (routine / non-problematic)**  
+**Case type:** Routine / non-problematic  
+**Commodity:** Refined marine fuel (e.g., VLSFO/MGO)  
+**Real-world anchor:** Bunkering as a regulated activity in Singapore; MPA licensing and standards; Singapore regulations governing ship-to-ship transfer of petroleum (permission baseline). ?cite?turn18search2?turn18search14?turn0search14?  
+**Proposed exercise-ready encounter setup (composite):**  
+A Singapore-flagged bunker/product tanker **GOLDEN PIONEER (IMO 9467823)** conducts a documented bunkering operation with an ocean-going product tanker (e.g., **SINGAPORE PIONEER (IMO 9478262)**) at a designated Singapore anchorage/port waters. AIS is continuous; both vessels broadcast consistent identity fields; duration is short (hours, not days); no suspicious course/speed oscillations. ?cite?turn29search2?turn4search7?turn18search2?  
+**Location/zone and plausibility:** Singapore port waters/anchorages, where bunkering is a standard, licensed activity and a core part of the port ecosystem. ?cite?turn18search2?turn18search17?turn20search32?  
+**Teaching point(s) tested:**  
+Identity layer is clean; movement layer shows close proximity that is *expected*; documents (bunker delivery note, licence identifiers) are internally consistent; service provider is licensed. Establishes the “what good looks like” baseline so later cases feel meaningfully different. ?cite?turn18search14?turn0search14?turn9view0?  
+**Participant-visible indicators:** Licensed bunker supplier/bunker tanker context; short, stable alongside window; AIS on; plausible location for services; no unusual flag/name churn. ?cite?turn18search14?turn29search2?turn20search32?  
+**Facilitator-only hidden facts:** Nothing illicit; all documents and permissions are valid; this is intentionally “boring” to train discipline. ?cite?turn18search14?turn0search14?  
+**Recommended participant-facing data fields for a case card:** Vessel A (name, IMO, flag, type, year built); Vessel B (name, IMO, flag, type); zone label; AIS status summary; purpose code (“Bunkering”); insurer (mainstream/standard); documents list (“bunker delivery note”, “licence reference”, “port notification”). ?cite?turn18search14?turn29search2?turn4search7?  
+**Likely best workshop classification and rationale:** Routine/non-problematic — the operational purpose and compliance signals match regulated bunkering. ?cite?turn18search2?turn0search14?  
+**Citation block and confidence:** High confidence because the regulatory baseline and vessel identities are public and stable; encounter parameters are explicitly a composite built from that baseline. ?cite?turn18search2?turn18search14?turn0search14?turn29search2?turn4search7?
+
+**Oil case OIL-02 — “Looks like STS” in a congested anchorage (false positive)**  
+**Case type:** False positive  
+**Commodity:** Oil (unconfirmed) / none (no transfer actually occurs)  
+**Real-world anchor:** In busy Singapore approaches, proximity events can be operationally normal; effective detection depends on combinations of indicators (not a single “two ships close together” signal). ?cite?turn18search2?turn9view0?turn9view2?  
+**Proposed exercise-ready encounter setup (composite):**  
+Two tankers (choose any two real, non-designated vessel identities) appear “coupled” by simple proximity logic for ~6–10 hours because both are anchored in a tight anchorage footprint and swing with wind/current. AIS remains on; there is no tell-tale drift pattern consistent with transfer (no controlled parallel movement, fender deployment indicators, hose time window). No STS plan/notification indicators are present; the only “signal” is visual closeness on a map. ?cite?turn18search2?turn9view0?  
+**Location/zone and plausibility:** Singapore Strait approaches/anchorage zones where large numbers of vessels can be stationary or slow-moving in close quarters. ?cite?turn18search2?turn20search32?  
+**Teaching point(s) tested:** Movement/AIS layer: how to avoid over-triggering on proximity; why “low-signal” location + continuous AIS + lack of other red flags should push you toward “false positive” or “needs more info, but low urgency”. Reinforces disciplined escalation and proportionality. ?cite?turn9view0?turn9view2?  
+**Participant-visible indicators:** Continuous AIS; no identity oddities; plausible waiting/anchorage behaviour; no documentary/cargo indicators suggesting a transfer; no suspicious insurance/ownership cues. ?cite?turn9view0?  
+**Facilitator-only hidden facts:** Harbour master records show no STS permit/plan was filed because there was no STS; the vessels were simply waiting. ?cite?turn0search14?turn9view2?  
+**Recommended participant-facing data fields for a case card:** Simple track summary (“anchored”, “swinging positions”, “AIS continuous”), distance/time overlap, but *no* cargo paperwork fields (to force participants to recognise “you don’t have evidence of cargo movement”). ?cite?turn9view0?  
+**Likely best workshop classification and rationale:** False positive — proximity alone is insufficient, and there are no supporting identity/document/finance signals. ?cite?turn9view0?turn9view2?  
+**Citation block and confidence:** Medium confidence (composite), high confidence in the underlying principle that evasion detection relies on multi-factor indicators and due diligence, not a single cue. ?cite?turn9view0?turn9view2?turn18search2?
+
+**Oil case OIL-03 — EOPL/Tompok-style grey zone encounter (ambiguous)**  
+**Case type:** Ambiguous  
+**Commodity:** Oil (claimed) / could be services-only  
+**Real-world anchor:** Malaysian waters near the Singapore Strait have been described as regular sites for illegal STS used to obscure cargo origin; Malaysia has tightened enforcement around anchoring permissions and illegal STS activity (context for why this zone is sensitive). ?cite?turn20search0?turn20search12?turn9view2?  
+**Proposed exercise-ready encounter setup (composite, Indonesia-relevant geography):**  
+Two oil tankers meet at an “outer port limits / lay-up” style area near the eastern entrance of the Singapore Strait and remain alongside for ~18 hours. AIS is on, but one vessel’s static data looks “sloppy” (destination “FOR ORDERS”, occasional draught anomalies). The stated purpose is “ship services / tank cleaning / stores”, but the physical alongside duration is longer than typical for basic services. Documents provided are minimal: a short email note from an agent and an invoice stub, but no clear STS plan/notification evidence. Participants must decide whether this is (a) benign ship services in a known service area, (b) a low-grade regulatory violation, or (c) an oil-transfer concealment event. ?cite?turn20search0?turn9view0?turn9view2?  
+**Location/zone and plausibility:** A Malaysia-adjacent outer-limits/anchorage environment is plausible for both legitimate services and misuse; that “dual-use” nature is exactly why it’s an ambiguous teaching case. ?cite?turn20search0?turn20search12?  
+**Teaching point(s) tested:**  
+How to reconcile mixed signals across the four layers: (i) *identity* is mostly consistent; (ii) *movement* is suspicious-ish but not definitive; (iii) *documents* are insufficient; (iv) *service-provider/insurance* risk checks matter (is the insurer reputable? is the agent identifiable?). Teachers can use this to reinforce what a proportionate escalation would look like even when the classification is uncertain. ?cite?turn9view2?turn9view3?  
+**Participant-visible indicators:** Known hotspot context; longer-than-expected alongside; thin documentation; generic destination strings; no obvious AIS switch-off. ?cite?turn20search0?turn9view0?  
+**Facilitator-only hidden facts:** You can tune this case two ways depending on how much ambiguity you want in the final set:  
+- **Variant A (benign)**: the “alongside” was for maintenance and provisions; no cargo transfer occurred.  
+- **Variant B (concerning)**: there was a small-volume cargo transfer plus deliberately weak paperwork, but not enough to prove origin laundering without external data.  
+Either way, the facilitator reveals that the “best next step” is evidence gathering across documents + counterparties + insurance, consistent with OFAC-style guidance on verifying documentation and insurance. ?cite?turn9view2?turn9view3?  
+**Recommended participant-facing data fields for a case card:** Zone label; time alongside; AIS continuity; destination strings; limited document list; insurer name (generic or obscure); agent contact (generic); “declared activity” field. ?cite?turn9view3?turn20search0?  
+**Likely best workshop classification and rationale:** Ambiguous — by design, participants should practise saying “not enough to conclude”, while still articulating what would raise or lower confidence. ?cite?turn9view0?turn9view2?  
+**Citation block and confidence:** Medium confidence; it’s a composite anchored in documented regional enforcement context and in authoritative multi-layer red-flag guidance. ?cite?turn20search0?turn9view0?turn9view2?turn9view3?
+
+**Oil case OIL-04 — Unauthorised STS off Penang (concerning ? high-risk)**  
+**Case type:** Concerning (and, depending on how much sanctions context you reveal, can be “high-risk”)  
+**Commodity:** Crude oil  
+**Real-world anchor:** In late January 2026, Malaysian authorities detained two tankers suspected of illegal STS oil transfers and seized crude valued at over 512 million ringgit, about 24 nautical miles west of Muka Head, Penang; the Malaysian Maritime Enforcement Agency said the vessels were coupled and suspected of transfer activity, and investigated anchoring without permission and illegal STS. ?cite?turn20search0?turn20search4?  
+**Proposed exercise-ready encounter setup (real event, simplified for workshop):**  
+Participants receive a “live-style incident report” card: two VLCC-sized tankers at anchor, physically coupled, discovered by patrol after a complaint at ~0100 local time; suspected unauthorised STS transfer. A small set of vessel identity fields are provided plus the coastal-state violation framing (anchoring without permission; illegal STS). ?cite?turn20search0?turn20search4?  
+**Location/zone and plausibility:** Off Penang on Malaysia’s west coast (Strait of Malacca approach), a region publicly described as a regular site for illegal STS used to obscure cargo origin. ?cite?turn20search0?  
+**Teaching point(s) tested:**  
+- Movement layer: “coupled at anchor” as a strong STS indicator (higher confidence than mere proximity).  
+- Jurisdiction layer: coastal state permissions/anchoring rules matter even before sanctions questions.  
+- Documents layer: origin may be unknown at first; the absence of origin info is itself a practical challenge.  
+Facilitator can then add “sanctions context” as a reveal to show how risk posture changes when identity/ownership is checked. ?cite?turn20search0?turn9view2?  
+**Participant-visible indicators:** Official interdiction framing; anchored outside authorised area; coupled position; high cargo value; lack of a clear cargo origin statement. ?cite?turn20search0?  
+**Facilitator-only hidden facts (for teachable escalation):**  
+- IMO 9237539 is listed on the OFAC SDN list under the vessel name **LONGBOW LAKE** (with former-name aliases), illustrating name/identity instability as a risk factor. ?cite?turn24view0?  
+- If you choose to include it, open-source sanctions-monitoring groups have publicly asserted that the Penang transfer involved Iranian crude; Malaysia’s public statements reported by Reuters did not specify origin, so this should be presented as “alleged / unconfirmed” unless you provide a stronger documentary proof layer in the card. ?cite?turn20search0?turn23search3?  
+**Recommended participant-facing data fields for a case card:** Coastal-state incident summary; location (“24 nm west of Muka Head, Penang”); vessel A/B names + IMO; whether coupled; any permit/authorisation info; “cargo origin: unknown” field; and a simple enforcement-outcome field (detained, investigated). ?cite?turn20search0?turn20search4?turn24view0?  
+**Likely best workshop classification and rationale:** Concerning (bordering high-risk) — the behaviour is an apparent unauthorised STS event; if sanctions/identity flags are added, the risk level rises quickly. ?cite?turn20search0?turn24view0?turn9view0?  
+**Citation block and confidence:** High confidence on the interdiction facts; medium confidence on any claimed cargo origin beyond what Malaysian authorities publicly stated. ?cite?turn20search0?turn20search4?turn24view0?turn23search3?
+
+**Oil case OIL-05 — Iranian shadow-fleet STS with AIS switch-off (high-risk)**  
+**Case type:** High-risk  
+**Commodity:** Crude oil  
+**Real-world anchor:** Treasury stated in December 2024 that the Djibouti-flagged crude oil tanker MS ENOLA (IMO 9251951) had been involved in illicit Iranian oil transfers for several years and “recently received millions of barrels” of Iranian oil in an STS transfer from sanctioned National Iranian Tanker Company tanker DINO I (IMO 9569671), and that MS ENOLA continued deceptive practices including turning off AIS. ?cite?turn11view0?  
+**Proposed exercise-ready encounter setup (real case, simplified):**  
+Participants are shown: an STS transfer between a sanctioned NITC tanker (DINO I) and a “shadow fleet” tanker (MS ENOLA), followed by an AIS gap on the receiving vessel. They must classify it, and also identify the most relevant layer(s) for escalation: identity (sanctioned counterparty), movement/AIS (switch-off), and service/insurance/doc checks. ?cite?turn11view0?turn9view1?turn9view3?  
+**Location/zone and plausibility:** The case is not tied to a single Indonesia-adjacent coordinate in the public release, but it is consistent with OFAC guidance describing STS operations and AIS concealment associated with Iranian oil movements and STS activity in Malaysia/Singapore-adjacent waters. ?cite?turn9view0?turn9view2?turn11view0?  
+**Teaching point(s) tested:**  
+- High-signal identity cues: sanctioned counterparties and known NITC involvement. ?cite?turn10search1?turn11view0?  
+- High-signal movement cues: AIS disablement around suspicious activity. ?cite?turn11view0?turn9view0?  
+- Why “verify insurance” and “review shipping documentation” are not administrative trivia but core risk controls. ?cite?turn9view2?turn9view3?  
+**Participant-visible indicators:** “STS transfer occurred”; AIS off afterwards; crude cargo; one vessel linked to NITC; older/shadow-fleet style narrative. ?cite?turn11view0?turn9view1?turn10search1?  
+**Facilitator-only hidden facts:** The OFAC advisory explicitly frames this behaviour pattern as sanctions evasion risk; facilitator can reveal how insurers, flag registries, charterers, and coastal states become enabling or blocking nodes when such a vessel seeks services. ?cite?turn9view2?turn9view3?  
+**Recommended participant-facing data fields for a case card:** Vessel A/B (name, IMO, flag, type); “linked entity” field (e.g., NITC linkage); AIS behaviour summary; STS event summary; insurance field (known/unknown); documents field (certificate of origin present/absent). ?cite?turn10search6?turn10search1?turn11view0?turn9view3?  
+**Likely best workshop classification and rationale:** High-risk — sanctioned counterparty + STS + AIS switch-off is a classic high-signal cluster. ?cite?turn11view0?turn9view1?turn9view0?  
+**Citation block and confidence:** High confidence because the behaviour and vessel identities are stated in Treasury and OFAC materials. ?cite?turn11view0?turn9view1?turn10search6?turn10search1?
+
+**Oil case OIL-06 — DPRK refined petroleum STS supply chain (high-risk proliferation case)**  
+**Case type:** High-risk  
+**Commodity:** Refined petroleum (UN-capped / sanctions-prohibited above cap)  
+**Real-world anchor:** The 2019 U.S. government advisory states that North Korea evades sanctions “particularly through illicit ship-to-ship transfers of refined petroleum and coal”, and notes that in 2018 DPRK ports received at least 263 tanker deliveries linked to prohibited STS procurement (illustrating the scale of the tactic). ?cite?turn16view0?  
+**Proposed exercise-ready encounter setup (anchored to advisory annexes):**  
+Participants see a foreign-flag tanker listed as a vessel believed to have engaged in STS transfers with North Korean tankers — for example **SEA TANKER II (IMO 9664483)** from the advisory annex — operating in the ?entity?["place","East China Sea","northwest pacific marginal sea"]? with AIS that is “odd but not fully off” (e.g., intermittent reporting), meeting a DPRK tanker from the annexed DPRK-capable STS list (e.g., **UN PHA 2 (IMO 8966535)**). They must identify this as a proliferation-relevant STS case and explain which layer(s) make it high-risk even if documents are sparse. ?cite?turn17view0?turn17view2?turn16view0?  
+**Location/zone and plausibility:** The advisory explicitly emphasises East China Sea operating patterns and provides guidance for industry (including insurers) to research AIS history for vessels operating there, implying that this region is a relevant operational theatre for illicit DPRK-linked STS. ?cite?turn17view2?turn16view0?  
+**Teaching point(s) tested:**  
+- Proliferation-specific attention: DPRK petroleum caps and STS evasion. ?cite?turn16view0?  
+- “Risk layers” logic when documents are missing: identity linkage + region + STS mode often carries the case. ?cite?turn16view0?turn9view0?  
+- Why insurance/flag/state actions matter: the advisory explicitly addresses insurers, flag registries, and due diligence expectations. ?cite?turn16view0?turn17view2?  
+**Participant-visible indicators:** Vessel appears on an official advisory annex list; operates in East China Sea; STS contact with DPRK-capable tanker; AIS anomalies. ?cite?turn17view0?turn17view2?turn16view0?  
+**Facilitator-only hidden facts:** The intended “right answer” is that this is high-risk regardless of whether you have perfect cargo paperwork, because the STS method is a documented DPRK evasion channel at scale; the facilitator can reveal how such cases are escalated (flag registry inquiries, insurer screening, port entry restrictions, etc.) without turning the exercise into a legal seminar. ?cite?turn16view0?turn17view2?  
+**Recommended participant-facing data fields for a case card:** Annex-source flag (“listed in government advisory”); vessel identity; region; AIS behaviour; encounter duration; “suspected product” (refined petroleum); and a short “why this matters” hint line for non-expert participants. ?cite?turn16view0?turn17view0?turn17view2?  
+**Likely best workshop classification and rationale:** High-risk — an annex-listed STS counterparty linked to DPRK tanker capability is an immediate escalation case in a PF workshop context. ?cite?turn16view0?turn17view0?turn17view2?  
+**Citation block and confidence:** High confidence because the vessel lists and evasion framing come from an official advisory. ?cite?turn16view0?turn17view0?turn17view2?
+
+**Coal case COAL-01 — Indonesian coal transhipment at ?entity?["place","Taboneo Anchorage","south kalimantan, indonesia"]? (routine / non-problematic)**  
+**Case type:** Routine / non-problematic  
+**Commodity:** Coal  
+**Real-world anchor:** Indonesia coal logistics commonly use barges and offshore anchorage transhipment before onward bulk-carrier shipment; a typical Kalimantan transport system includes movement via tug & barge to an offshore transhipment location (anchorage/terminal), then transport by bulk cargo vessels. ?cite?turn21search24?turn21search18?  
+**Proposed exercise-ready encounter setup (lightly composite, grounded in real vessel context):**  
+A bulk carrier such as **PLACID SEA (IMO 9285110)** loads Indonesian steam coal at Taboneo Anchorage using barges and ship cranes/grabs. Small craft cluster around the vessel; AIS shows the bulk carrier stationary at anchorage for multiple days with multiple small-boat approaches (which can look “suspicious” to a team that only expects port loading). Participants should recognise this as routine Indonesian coal logistics unless other red flags are introduced. ?cite?turn22search6?turn21search24?turn21search18?  
+**Location/zone and plausibility:** Taboneo (off the Barito River/Banjarmasin logistics chain) is described in Indonesian coal company reporting as an “open anchorage transshipment area” used for ship loading activities. ?cite?turn21search18?turn21search24?  
+**Teaching point(s) tested:**  
+- Coal can move “at sea” legally in Indonesia via barge-to-mother-vessel transhipment; don’t misclassify every offshore transfer as sanctions evasion. ?cite?turn21search24?turn21search18?  
+- Distinguish **domestic logistics patterns** (many barges; long stationary periods; open anchorage) from clandestine tanker-to-tanker STS concealment patterns. ?cite?turn9view0?turn21search24?  
+**Participant-visible indicators:** Bulk carrier (not a tanker); coal logistics context; multiple barges/small craft; long-duration loading; no AIS off; plausible Indonesian export route. ?cite?turn22search6?turn21search24?  
+**Facilitator-only hidden facts:** The “right” classification is routine unless the facilitator deliberately adds a DPRK or document-forgery hook; this case is primarily here to prevent overfitting (“STS = bad”). ?cite?turn21search24?turn9view0?  
+**Recommended participant-facing data fields for a case card:** Vessel (name, IMO, flag, type); zone (“Taboneo Anchorage”); transfer method (“barge-to-bulk-carrier”); commodity (“Indonesian steam coal”); AIS status (“continuous”); document set (standard export docs). ?cite?turn22search6?turn21search24?turn21search18?  
+**Likely best workshop classification and rationale:** Routine/non-problematic — consistent with common Indonesian coal export logistics via offshore transhipment. ?cite?turn21search24?turn21search18?  
+**Citation block and confidence:** Medium–high confidence: the logistics model is well documented; the exact vessel/time parameters are simplified for workshop use, but the vessel identity is real and verifiable. ?cite?turn21search24?turn21search18?turn22search6?
+
+**Coal case COAL-02 — DPRK coal ship-to-ship transfers to lighters in the ?entity?["place","Gulf of Tonkin","northwest south china sea"]? (high-risk)**  
+**Case type:** High-risk  
+**Commodity:** Coal  
+**Real-world anchor:** The UN Panel of Experts reported imagery showing DPRK vessels **Paek Yang San (IMO 9020534), Ka Rim Chon (IMO 8314811), Pho Phyong (IMO 8417962), and Tae Yang (IMO 8306929)** conducting ship-to-ship transfers of coal to lighters in the Gulf of Tonkin between September and October 2018, and recommended designation with specific transfer dates for each vessel. ?cite?turn12view1?turn12view3?  
+**Proposed exercise-ready encounter setup (real case, simplified):**  
+Participants get a satellite-imagery-style summary: DPRK-flag bulk carrier meets multiple small lighters offshore; no port call; repeated lighter rendezvous; sequence tied to specific dates (choose one of the four vessels per card instance). Participants classify as high-risk and identify what layer(s) provide actionable evidence: identity (DPRK vessel & IMO), movement (avoidance of port calls), and documents/cargo verification at receiving side. ?cite?turn12view3?turn12view2?  
+**Location/zone and plausibility:** Gulf of Tonkin is explicitly named in the UN reporting for this coal-transfer pattern; it is a pedagogically strong zone because it is “regional Asia” but not so close to Indonesia that participants confuse it with normal Indonesian coal transhipment. ?cite?turn12view1?turn21search24?  
+**Teaching point(s) tested:**  
+- Coal evasion typology: avoiding port calls by using lighters, and why port authorities are advised to verify certificates of origin/manifests/bills of lading and scrutinise such patterns. ?cite?turn12view2?turn12view3?  
+- How UN reporting can provide a usable evidence trail (imagery, vessel IDs, dates) for risk triage. ?cite?turn12view1?turn12view3?  
+**Participant-visible indicators:** DPRK vessel identity; lightering method; repeated offshore transfers; clear UN-cited dates for transfers; sanctions context. ?cite?turn12view3?turn16view0?  
+**Facilitator-only hidden facts:** This is a “capstone-style” proliferation case: even if the receiving-country paperwork claims non-DPRK origin, UN reporting explicitly frames DPRK coal exports as prohibited and highlights the risk of ambiguous or contested evidentiary chains—useful for discussion about thresholds and corroboration. ?cite?turn12view1?turn12view2?turn16view0?  
+**Recommended participant-facing data fields for a case card:** Vessel name + IMO; “transfer to lighters” method; zone (“Gulf of Tonkin”); date; document red flags (certificate of origin risk); classification choice + rationale box. ?cite?turn12view3?turn12view2?  
+**Likely best workshop classification and rationale:** High-risk — UN-cited DPRK coal STS-to-lighters pattern in a prohibited-export context. ?cite?turn12view3?turn16view0?  
+**Citation block and confidence:** High confidence due to UN vessel list, method description, and specific dates. ?cite?turn12view1?turn12view3?turn16view0?
+
+## Crosswalk of cases to teaching objectives
+
+| Case ID | Target classification muscle | Identity layer | Movement/AIS layer | Document/cargo layer | Finance/insurance/service-provider layer |
+|---|---|---|---|---|---|
+| OIL-01 | Recognise benign STS/services | ? | ? | ? | ? |
+| OIL-02 | Don’t over-trigger on proximity | ? | ? | ? | ? |
+| OIL-03 | Handle uncertainty with disciplined escalation | ? | ? | ? | ? |
+| OIL-04 | Respond to real enforcement-led STS interdiction | ? | ? | ? | ? |
+| OIL-05 | Recognise high-signal sanctions-evasion cluster | ? | ? | ? | ? |
+| OIL-06 | Proliferation-relevant STS (annex-listed risk) | ? | ? | ? | ? |
+| COAL-01 | Don’t mistake Indonesian coal logistics for evasion | ? | ? | ? | ? |
+| COAL-02 | UN-cited DPRK coal evasion pattern | ? | ? | ? | ? |
+
+Legend: ? primary; ? secondary.
+
+This crosswalk is intentionally balanced: participants must first learn “what normal looks like” (OIL-01, COAL-01), then practise not overreacting (OIL-02), then confront ambiguity (OIL-03), and finally work through increasingly high-risk cases, including two that are PF-core (OIL-06, COAL-02). ?cite?turn9view0?turn16view0?turn12view3?turn21search24?turn11view0?turn20search0?
+
+## Build notes and cautions for simplifying public cases into workshop cards
+
+Name changes, flag changes, and confusing public vessel-name trails are not edge cases; they are part of the operational reality described in multiple OFAC materials (including discussion of AIS manipulation and false identification data). Your cards should therefore emphasise IMO numbers as the stable identifier, and treat vessel names as changeable attributes rather than “truth”. ?cite?turn9view0?turn9view1?turn24view0?
+
+Avoid turning the exercise into “sanctions list bingo”. The best learning outcome is that groups can justify classifications using **multi-layer reasoning**: a vessel’s designation status is important, but so are AIS behaviours, documentary integrity, and whether an insurer/service provider makes sense. This “combination-of-indicators” approach is explicitly reinforced in OFAC guidance and advisories. ?cite?turn9view0?turn9view2?turn16view0?
+
+For SE Asia geography, you can keep maps simple: label zones rather than pinning exact coordinates unless you have authoritative coordinate sources. Where you do use coordinates (e.g., Singapore port limits are formally defined), you can safely base map polygons on official notices, but for many “hotspot” narratives a labelled zone is sufficient (and easier to reproduce on paper). ?cite?turn20search32?turn20search0?
+
+If you include “insurance/finance” fields, keep them workshop-usable: one insurer name, one ship manager/operator, one “documents present” list, and one “red flag summary” line. OFAC explicitly frames insurance verification and documentation review as core controls, so including these fields is pedagogically legitimate even on a 1-page card. ?cite?turn9view2?turn9view3?
+
+Finally, when a public source does **not** confirm a key fact (for example, crude origin in a recent interdiction), preserve that uncertainty in the case design. That’s not a weakness; it’s exactly what makes an “ambiguous” or “concerning” case realistic — and it trains participants to separate “what we know” from “what we suspect”. ?cite?turn20search0?turn23search3?turn9view0?
